@@ -53,3 +53,63 @@ laquelle j'ai connecté le broche LED de l'écran; dans cette exemple 18.
 Écrire `out` dans direction pour dire que je veux écrire et non lire.
 
 Je met 1 dans value pour allumer la LED 0 pour l'éteindre. 
+
+Utiliser WringPi
+----------------
+
+**WringPi** est un utilitaire disponible pour simplifier l'utilisation du bus.
+
+Il suffit de cloner le repo git git://git.drogon.net/wiringPi. 
+Ensuite il faut installer l'utilitaire avec la commande `./build`.
+
+L'utilisation est très simple:
+
+.. code-block:: guess
+   
+   gpio write 1 0
+
+Dans cette commande on écrit 0 dans gpio identifié par 1. 
+Pour savoir quelle broche est représenté par l'identifiant 1 il suffit de se référé au tableau ci dessous:
+
+           +-------------+----------------+
+           | GPIO Number | WringPi Number |
+           +-------------+----------------+
+           | 4           | 7              |
+           +-------------+----------------+
+           | 17          | 0              |
+           +-------------+----------------+
+           | R1:21 R2:27 | 2              |
+           +-------------+----------------+
+           | 22          | 3              |
+           +-------------+----------------+
+           | 10          | 12             |
+           +-------------+----------------+
+           | 9           | 13             |
+           +-------------+----------------+
+           | 11          | 14             |
+           +-------------+----------------+
+           | 14          | 15             |
+           +-------------+----------------+
+           | 15          | 16             |
+           +-------------+----------------+
+           | 18          | 1              |
+           +-------------+----------------+
+           | 23          | 4              |
+           +-------------+----------------+
+           | 24          | 5              |
+           +-------------+----------------+
+           | 25          | 6              |
+           +-------------+----------------+
+           | 8           | 10             |
+           +-------------+----------------+
+           | 7           | 11             |
+           +-------------+----------------+
+
+Donc dans l'exemple précédent on écrit 0 dans la broche GPIO18.
+
+Pour avoir plus d'info sur l'outils `gpio` il vous suffit de lancer la commande:
+
+.. code-block:: guess
+
+   gpio -h
+
