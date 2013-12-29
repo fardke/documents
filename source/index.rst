@@ -17,12 +17,17 @@ Contents:
    screenUse
    bootnfs
 
-   references
 
 Indices and tables
 ==================
 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   references
+
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
+* :ref:`Références <reference>`
 
