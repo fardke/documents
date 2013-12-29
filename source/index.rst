@@ -15,6 +15,7 @@ Contents:
    firstBoot
    raspberryGPIO
    screenUse
+   bootnfs
 
    references
 

@@ -1,6 +1,8 @@
 Premier démarrage du Raspberry Pi
 =================================
 
+.. _raspbianInstall:
+
 Installation Raspbian
 ---------------------
 
