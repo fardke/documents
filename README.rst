@@ -16,3 +16,5 @@ It will generate an html tree in build repository.
 
 So you just have to open *build/html/index.html* in
 your web browser.
+
+.. _Sphynx: http://sphinx-doc.org/index.html
