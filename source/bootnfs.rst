@@ -1,3 +1,5 @@
+.. _nfs:
+
 Utiliser un système de fichier en nfs
 =====================================
 

@@ -16,6 +16,7 @@ Contents:
    raspberryGPIO
    screenUse
    bootnfs
+   crosscompile
 
 
 Indices and tables
