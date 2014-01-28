@@ -33,19 +33,19 @@ Le plus simple pour activer une broche du `Raspberry` rapidement c'est de se con
 
 .. code-block:: guess
 
-   $ cd /sys/class/gpio
-   $ ls
-   export     gpiochip0  unexport
-   $ echo 18 > export
-   $ ls
-   export     gpio18     gpiochip0  unexport
-   $ cd gpio18
-   $ ls
-   active_low  direction   edge        subsystem   uevent      value
-   $ echo out > direction
-   $ cat value
-   0
-   $ echo 1 > value
+   cd /sys/class/gpio
+   ls
+   # export     gpiochip0  unexport
+   echo 18 > export
+   ls
+   # export     gpio18     gpiochip0  unexport
+   cd gpio18
+   ls
+   # active_low  direction   edge        subsystem   uevent      value
+   echo out > direction
+   cat value
+   # 0
+   echo 1 > value
 
 La valeur que je met dans export dépend du numéro de la broche GPIO à
 laquelle j'ai connecté le broche LED de l'écran; dans cette exemple 18.
@@ -63,6 +63,7 @@ Il suffit de cloner le repo git git://git.drogon.net/wiringPi.
 Ensuite il faut installer l'utilitaire avec la commande `./build`.
 
 L'utilisation est très simple:
+
 
 .. code-block:: guess
    
